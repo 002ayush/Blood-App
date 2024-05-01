@@ -18,4 +18,10 @@ User can also check his profile by tapping on the profile picture.
    <br><br>
   <h3>This is the chat messanger where users can interact with other people to know the blood groups and also user can communicate with the donar regarding location to know the donar location etc.</h3>
  <img src ="https://github.com/002ayush/Blood-App/assets/110256959/df3ea4af-5570-4c58-8f1b-993b2dbbc44a" height="450" width="250"/>
+ <h3>A sample video of my project</h3>
+ 
+
+https://github.com/002ayush/Blood-App/assets/110256959/25898fb2-4cc7-4cad-bb4f-999c0636bd78
+
+
 <br><br>
