@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1BDBD"
+    tools:context=".donar_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donar Details"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+                <TextView
+                    android:id="@+id/etdonarName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donarbloodgrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter bloodgrp - O+/B-/B+/A+/AB-/O-"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donargender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donarphoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter your phoneno"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="phone"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+                <TextView
+                    android:id="@+id/donaremailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donaroccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter your occupation details"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donarcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Your City"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donartemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Temperature"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donarBP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="BP"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donarpulse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Pulse Rate"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="numberDecimal"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donarweight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Weight"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/donarpreviouslydonated"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Do you previously donated blood??"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="#12EDE4E4"
+                android:layout_marginTop="30dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etbloodlastdonated"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="YYYY-MM-DD"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:inputType="date"
+                    android:textStyle="bold"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btndonardetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Details"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="@drawable/buttonbackground"
+            />
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</FrameLayout>

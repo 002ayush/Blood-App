@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BloodUnity</string>
+    <string name="OpenDrawer">Open Navigation</string>
+    <string name="CloseDrawer">Close Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="underline_text"><u>Sign In</u></string>
+    <string name="heading">Don\'t fear donating blood: It can prove to be healthy, after all</string>
+    <string name="bloodintro">Blood is an essential building block of human life. Today, millions of people around the world rely on donated blood to stay alive. But the amount of blood donated every year falls far short of what is actually needed. India alone falls short of three million units of its annual need of 12 million units a year, according to a World Health Organisation report.
+</string>
+    <string name="bloodmanufactur">Several patients suffer from diseases that require routine blood transfusions. More donors need to step up and do their bit. Fear is one of the major challenges which restricts people to donate blood. But it is important to know that donating blood is good for you.
+
+
+    </string>
+    <string name="healthproblem">Donating blood boosts overall cardiovascular health. Increased level of iron in the blood can increase the chance of heart diseases. High blood iron level accelerates cholesterol oxidation and this progression is believed to be harmful for the arteries, leading to heart disease. Women constantly go through removal of blood in the course of menstrual cycles. Therefore, donating blood frequently helps men reduce the amount of iron in the blood. Regular blood donors are 33% less likely to suffer fr cardiovascular disease and 88% less likely to suffer a heart attack.
+    </string>
+    <string name="joyofdonatingblood">The health benefits of donating blood are significant - but of course, the most satisfying and rewarding part is that you get to save lives. Not only do you give someone a second chance at life, but also positively impact the lives of all those who depend on the patient.
+    </string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

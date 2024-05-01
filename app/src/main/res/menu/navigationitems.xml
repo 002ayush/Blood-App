@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"/>
+    <item android:id="@+id/people"
+        android:icon="@drawable/baseline_people_24"
+        android:title="People"/>
+    <item android:id="@+id/donar_details"
+        android:icon="@drawable/baseline_bloodtype_24"
+        android:title="Donar Details"/>
+    <item android:id="@+id/bloodtest"
+        android:icon="@drawable/baseline_local_hospital_24"
+        android:title="Blood Test Labs"/>
+
+
+</menu>

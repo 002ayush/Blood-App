@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="14dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="Ayush Mishra"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/useremail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ayush@gmail.com"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:id="@+id/bloodimgView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B+"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="36sp"
+                    android:padding="12dp"
+
+                    android:background="@drawable/rounded_border"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+            >
+
+        <Button
+            android:id="@+id/btnchat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/chat_call_btn_backgrnd"
+            android:textStyle="bold"
+
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/btncall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/chat_call_btn_backgrnd"
+            android:layout_marginLeft="24dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
