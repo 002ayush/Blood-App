@@ -7,7 +7,8 @@ Furthermore it has the login signup functionality for the authentication of the 
 User can also check his profile by tapping on the profile picture.
 <br><br>
   <h3>This is the screenshot of the total count of the blood groups</h3>
-<img src ="https://github.com/002ayush/Blood-App/assets/110256959/7555739e-46c9-4693-86d6-e88f6c843096" height="450" width="250"/>
+<img src ="https://github.com/002ayush/Blood-App/assets/110256959/3ca02c3d-099d-4dc3-8fb8-902e5f28c396" height="450" width="250"/>
+  
   <br><br>
    <h3>This is the signup page if the user is already registered he can move down to the sign in page</h3>
   <img src ="https://github.com/002ayush/Blood-App/assets/110256959/dd504941-95fb-4ae9-9b81-55f3ee89cf21" height="450" width="250"/>
