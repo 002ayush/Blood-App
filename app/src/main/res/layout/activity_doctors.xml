@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Blood Test"
+        android:text="Blood Test Labs"
         android:textSize="32sp"
         android:textStyle="bold"
         android:gravity="center"/>
@@ -56,7 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pathology Lab"
+            android:text="XYZ Lab"
             android:layout_marginStart="18dp"
             android:textStyle="bold"
             android:textSize="22sp"/>
@@ -64,7 +64,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A-41, Block A, Sector 22, Noida, Uttar Pradesh 201301"
+                    android:text="Noida, Uttar Pradesh "
                     android:textStyle="italic"
                     android:layout_marginStart="18dp"/>
 
@@ -111,7 +111,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Max Lab"
+                    android:text="DYTB Lab"
                     android:layout_marginStart="18dp"
                     android:textStyle="bold"
                     android:textSize="22sp"/>
@@ -119,7 +119,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shop No. 54, Market, B Block, Gardenia Glory, Sector 46, Noida, Uttar Pradesh 201303"
+                    android:text="Sector 24, Uttar Pradesh 11111"
                     android:textStyle="italic"
                     android:layout_marginStart="18dp"/>
 
@@ -166,7 +166,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Metropolis Healthcare Ltd"
+                    android:text="STBS Lab"
                     android:layout_marginStart="18dp"
                     android:textStyle="bold"
                     android:textSize="22sp"/>
@@ -174,7 +174,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DK Chauhan Mkt, SN A104, near Ritwan Hotel, Baraula, Sector 49, Noida, Uttar Pradesh 201301"
+                    android:text="Near Market,Uttar Pradesh"
                     android:textStyle="italic"
                     android:layout_marginStart="18dp"/>
 
@@ -221,7 +221,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Delvin PathLab"
+                    android:text="Mishra Blood Center"
                     android:layout_marginStart="18dp"
                     android:textStyle="bold"
                     android:textSize="22sp"/>
@@ -229,7 +229,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shop Number 141, Cleo St, near CLEO COUNTY, Sector 121, Noida, Uttar Pradesh 201307"
+                    android:text="Shop Number 141, Uttar Pradesh 224242"
                     android:textStyle="italic"
                     android:layout_marginStart="18dp"/>
 

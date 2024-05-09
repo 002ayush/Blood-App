@@ -66,29 +66,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val metaData = applicationInfo.metaData
         ApiKey = metaData.getString("com.google.android.geo.API_KEY")
     }
-
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-
-        // Add a marker in Sydney and move the camera
-       /* val gkplatlng = LatLng(26.764917499892555, 83.37129094735533)
-        mMap.addMarker(MarkerOptions().position(gkplatlng).title("Gorakhpur"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(gkplatlng))
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(gkplatlng,16f)) // zoom defines how much it zoom in or out limited value is 16 to 20 in float value.
-        mMap.addCircle(CircleOptions().center(gkplatlng).radius(10.0).fillColor(android.graphics.Color.MAGENTA))
-        //Integrating GeoCoder class
-
-       mMap.setOnMapClickListener {
-           mMap.addMarker(MarkerOptions().position(it))
-           val geocoder = Geocoder(this)
-           geocoder.getFromLocation(it.latitude,it.longitude,1
-           ) { address ->
-               Log.d("Address", address[0].getAddressLine(0))
-           }
-
-       }*/
-
-
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_LOCATION_PERMISSION)
         }else{
@@ -96,9 +75,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
         }
-
-
-
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
@@ -144,7 +120,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 }
             fetchuserblooddetails()
         } else {
-            // Handle case when location permission is not granted
+
             Log.e("Location Permission denied", "Location permission not granted")
         }
     }
@@ -185,54 +161,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-    /*fun getDirections(context: Context, destination: LatLng) {
-        val geoApiContext = GeoApiContext.Builder()
-            .apiKey("AIzaSyA-5xJ8I0XypouiQR749tQsM9IvePw_hnw")
-            .build()
 
-        val fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
-        if (ActivityCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_COARSE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            return
-        }
-        fusedLocationClient.lastLocation
-            .addOnSuccessListener { location: Location? ->
-                location?.let {
-                    val origin = LatLng(it.latitude, it.longitude)
-                    val destination = LatLng(destination.latitude, destination.longitude)
-
-                    GlobalScope.launch(Dispatchers.IO) {
-                        try {
-                            val directionsResult: DirectionsResult = DirectionsApi.newRequest(geoApiContext)
-                                .origin(com.google.maps.model.LatLng(origin.latitude,origin.longitude))
-                                .destination(com.google.maps.model.LatLng(destination.latitude,destination.longitude))
-                                .await()
-
-                            // Parse directions result
-
-                            val decodedPath = PolyUtil.decode(directionsResult.routes[0].overviewPolyline.encodedPath)
-                           // val polylineOptions = PolylineOptions().addAll(decodedPath)
-                            (context as MapsActivity).runOnUiThread {
-
-                                val polylineOptions = PolylineOptions()
-                                .add(origin)  // Origin point
-                                .add(destination)  // Destination point
-                                .addAll(decodedPath)
-                                context.mMap?.addPolyline(polylineOptions)
-                            }
-                            // Use polylineOptions to draw the path on the map or do other processing
-                        } catch (e: Exception) {
-                            e.printStackTrace()
-                        }
-                    }
-                }
-            }
-    }*/
 
 }
