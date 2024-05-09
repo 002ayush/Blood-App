@@ -68,8 +68,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-<<<<<<< HEAD
-=======
+
 
        
 
@@ -168,12 +167,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-<<<<<<< HEAD
+
 
 
 }
-=======
+
  
 
 }
->>>>>>> 961b66c71a28d41e6df9935eda68172ca6b44434
+
