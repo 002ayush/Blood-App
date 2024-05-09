@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener {
             val intent = Intent(this@MainActivity,MapsActivity::class.java)
             startActivity(intent)
-            finish()
+            
         }
         headerimg.setOnClickListener {
             loadFragment(MeraProfile())
