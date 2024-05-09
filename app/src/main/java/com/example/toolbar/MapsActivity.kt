@@ -64,10 +64,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val packageManager = this.packageManager
         val applicationInfo = packageManager.getApplicationInfo(this.packageName, PackageManager.GET_META_DATA)
         val metaData = applicationInfo.metaData
-        ApiKey = metaData.getString("com.google.android.geo.API_KEY")
+      
     }
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
+<<<<<<< HEAD
+=======
+
+       
+
+
+>>>>>>> 961b66c71a28d41e6df9935eda68172ca6b44434
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_LOCATION_PERMISSION)
         }else{
@@ -161,6 +168,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
+<<<<<<< HEAD
 
 
 }
+=======
+ 
+
+}
+>>>>>>> 961b66c71a28d41e6df9935eda68172ca6b44434
