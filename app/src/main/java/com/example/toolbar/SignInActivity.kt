@@ -49,10 +49,10 @@ class SignInActivity : AppCompatActivity() {
 
                 if (it.isSuccessful) {
                     val intent = Intent(this@SignInActivity, MainActivity::class.java)
-                    val userId = FirebaseAuth.getInstance().currentUser?.uid
+                    /*val userId = FirebaseAuth.getInstance().currentUser?.uid
                     val username = FirebaseAuth.getInstance().currentUser?.displayName
                     intent.putExtra("name",username)
-                    intent.putExtra("email",email)
+                    intent.putExtra("email",email)*/
                     finish()
                     startActivity(intent)
 

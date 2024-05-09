@@ -17,8 +17,14 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import com.squareup.picasso.Picasso
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,11 +43,20 @@ class MainActivity : AppCompatActivity() {
         toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.red))
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
         val headerView = navigationView.getHeaderView(0)
+        val fab = findViewById<FloatingActionButton>(R.id.fab)
         val headertxt = headerView.findViewById<TextView>(R.id.headertxt)
         val headermail = headerView.findViewById<TextView>(R.id.headermail)
         val headerimg = headerView.findViewById<ImageView>(R.id.imgView)
         headertxt.text = FirebaseAuth.getInstance().currentUser?.displayName
         headermail.text = FirebaseAuth.getInstance().currentUser?.email
+        FirebaseDatabase.getInstance().getReference("ProfileImage").child(FirebaseAuth.getInstance().uid.toString()).addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val profileimage = snapshot.child("userProfileImage").value
+                Picasso.get().load(profileimage.toString()).into(headerimg)
+            }
+            override fun onCancelled(error: DatabaseError) {}
+        })
+
         val fragmentManager: FragmentManager = supportFragmentManager
 
         val toggle  = ActionBarDrawerToggle(
@@ -52,7 +67,11 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
         supportActionBar?.title = "Home"
         //loadFragment(MainFragment())
-
+        fab.setOnClickListener {
+            val intent = Intent(this@MainActivity,MapsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
         headerimg.setOnClickListener {
             loadFragment(MeraProfile())
             drawerlayout.closeDrawer(GravityCompat.START)
@@ -84,6 +103,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.bloodtest -> {
                     val intent = Intent(this,DoctorsActivity::class.java)
+                    startActivity(intent)
+                    drawerlayout.closeDrawer(GravityCompat.START)
+                    true
+                }
+                R.id.googlemap -> {
+                    val intent = Intent(this,MapsActivity::class.java)
                     startActivity(intent)
                     drawerlayout.closeDrawer(GravityCompat.START)
                     true

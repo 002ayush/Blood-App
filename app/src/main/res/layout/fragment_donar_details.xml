@@ -165,7 +165,7 @@
                     android:id="@+id/donarcity"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Your City"
+                    android:hint="Enter your Address"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:inputType="text"

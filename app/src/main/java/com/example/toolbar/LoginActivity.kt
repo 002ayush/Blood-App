@@ -74,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
         myAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener{
                 if (it.isSuccessful) {
-                    val intent = Intent(this@LoginActivity,MainActivity::class.java)
+                    val intent = Intent(this@LoginActivity,SignInActivity::class.java)
 
                     addToDatabase(name,email,password,myAuth.uid!!)
                     val user = FirebaseAuth.getInstance().currentUser

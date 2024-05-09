@@ -10,6 +10,9 @@ import org.json.JSONObject
 
 class DoctorsActivity : AppCompatActivity(), PaymentResultListener {
     lateinit var bookseat1 : Button
+    lateinit var bookseat2 : Button
+    lateinit var bookseat3 : Button
+    lateinit var bookseat4 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_doctors)
@@ -17,6 +20,19 @@ class DoctorsActivity : AppCompatActivity(), PaymentResultListener {
         bookseat1.setOnClickListener {
             makePayment()
         }
+        bookseat2 = findViewById(R.id.bookseat2)
+        bookseat2.setOnClickListener {
+            makePayment()
+        }
+        bookseat3 = findViewById(R.id.bookseat3)
+        bookseat3.setOnClickListener {
+            makePayment()
+        }
+        bookseat4 = findViewById(R.id.bookseat4)
+        bookseat4.setOnClickListener {
+            makePayment()
+        }
+
     }
 
     private fun makePayment() {

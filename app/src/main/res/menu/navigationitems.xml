@@ -12,6 +12,9 @@
     <item android:id="@+id/bloodtest"
         android:icon="@drawable/baseline_local_hospital_24"
         android:title="Blood Test Labs"/>
+    <item android:id="@+id/googlemap"
+        android:icon="@drawable/googlemaps"
+        android:title="Show on Map"/>
 
 
 </menu>
